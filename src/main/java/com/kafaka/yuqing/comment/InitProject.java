@@ -18,6 +18,7 @@ public class InitProject implements ApplicationRunner {
     private final static Logger logger = LoggerFactory.getLogger(InitProject.class);
     @Override
     public void run(ApplicationArguments args) throws Exception {
+
         logger.info("开始写入日志------------------------");
         System.out.println("启动项目成功");
         logger.info("项目端口号："+servePrort);
