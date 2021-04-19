@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @PropertySource("classpath:application.yml")
 public class InitProject implements ApplicationRunner {
     //获取项目端口号
-    @Value("${server.port}")
+    @Value("${spring.datasource.url}")
     private String servePrort;
     private final static Logger logger = LoggerFactory.getLogger(InitProject.class);
     @Override
