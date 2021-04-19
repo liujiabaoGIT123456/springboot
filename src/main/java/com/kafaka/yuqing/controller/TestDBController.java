@@ -31,6 +31,7 @@ public class TestDBController {
     //连接数据库测试
     @RequestMapping("/test")
     public List<Test> test() {
+
         List<Test> test = testDBDao.test();
         System.out.println(test);
         logger.info("test++++++++++");
