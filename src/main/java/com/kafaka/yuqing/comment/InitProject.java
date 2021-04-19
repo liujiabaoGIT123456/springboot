@@ -1,6 +1,6 @@
 package com.kafaka.yuqing.comment;
 
-import com.kafaka.yuqing.controller.TestDBController;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:application.yml")
 public class InitProject implements ApplicationRunner {
+
     //获取项目端口号
     @Value("${server.port}")
     private String servePrort;
