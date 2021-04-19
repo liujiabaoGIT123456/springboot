@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.kafaka.yuqing.dao.TestDao">
+    <resultMap id="test123" type="com.testall.demo.entity.Test">
+        <result  property = "id"  column = "ID"  />
+        <result  property = "name"  column = "NAME"  />
+        <result  property = "value"   column = "TEST"/>
+    </resultMap>
+    <select id="test" resultMap="test123">
+        select * from TEST where id ='8349e6dc-216c-49c8-a9e4-dddf7bad82f4'
+    </select>
+
+    <select id="test1" resultType="com.testall.demo.entity.Test">
+        select * from TEST where id ='cd54346a-1a8a-4714-b3cc-8252a9594803'
+    </select>
+</mapper>
