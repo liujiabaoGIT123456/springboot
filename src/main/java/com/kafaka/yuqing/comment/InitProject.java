@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:application.yml")
 public class InitProject implements ApplicationRunner {
-
     //获取项目端口号
     @Value("${server.port}")
     private String servePrort;
