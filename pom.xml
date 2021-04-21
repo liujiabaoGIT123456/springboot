@@ -98,6 +98,13 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/kafka-command.jar</systemPath>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>2.1.2</version>
+        </dependency>
+
     </dependencies>
 
     <profiles>

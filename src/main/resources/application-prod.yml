@@ -1,6 +1,10 @@
 spring:
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:orcl
-    username: ABC
-    password: Aa123456
+    username: ENC(eUSx29SWJJzO3HcuNeM6zw==)
+    password: ENC(PhaHVUjZ3P1mW+nrkkQ6ueOQivqobFcC)
     driver-class-name: oracle.jdbc.driver.OracleDriver
+jasypt:
+  encryptor:
+    password: abc
+    algorithm: PBEWithMD5AndDES
