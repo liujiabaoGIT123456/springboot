@@ -33,6 +33,9 @@ public class TestDBController {
     public List<Test> test() {
 
         List<Test> test = testDBDao.test();
+        Test test1 = new Test();
+        test1.setId("12312412");
+        testDBDao.insert(test1);
         System.out.println(test);
         logger.info("test++++++++++");
         return testDBDao.test();
