@@ -4,3 +4,4 @@ spring:
     username: ABC
     password: Aa123456
     driver-class-name: oracle.jdbc.driver.OracleDriver
+name: "dev"

@@ -12,7 +12,7 @@ spring:
     lettuce:
       shutdown-timeout: 0
   profiles:
-    active:  dev
+    active:  @profiles.active@
 server:
   port: 8088
 

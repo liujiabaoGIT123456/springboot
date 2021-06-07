@@ -8,3 +8,4 @@ jasypt:
   encryptor:
     password: abc
     algorithm: PBEWithMD5AndDES
+name: "prod"
